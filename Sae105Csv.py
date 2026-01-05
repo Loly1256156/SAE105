@@ -14,3 +14,9 @@ with open('Sae105Csv.csv', mode='w', encoding='utf-8', newline='') as file:
     fichier = csv.DictWriter(file, fieldnames=champs)
     fichier.writeheader()
     fichier.writerows(etudiants)
+
+with open('resultat.csv', mode='w', encoding='utf-8', newline='') as file:
+    champs = ["Nom", "Prenom", "Resultat"]
+    fichier = csv.DictWriter(file, fieldnames=champs)
+    fichier.writeheader()
+    fichier.writerows(etudiants)
